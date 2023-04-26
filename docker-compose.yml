@@ -1,15 +1,15 @@
-version: "3.9"  # optional since v1.27.0
-services:
-  web_api:
-    image: questionariotccapi
-    container_name: questionario-tcc-api
-    ports:
-      - "5000:433"
-  sql:
-    image: "mcr.microsoft.com/mssql/server:2019-latest"
-    container_name: questionario_Db
-    ports: # not actually needed, because the two services are on the same network
-      - "1433:1433" 
-    environment:
-      - ACCEPT_EULA=y
-      - SA_PASSWORD=K@v@Ntr0P8
+#version: "3.9"  # optional since v1.27.0
+#services:
+#  web_api:
+#    image: questionariotccapi
+#    container_name: questionario-tcc-api
+#    ports:
+#      - "5000:80"
+#  sql:
+#    image: "mcr.microsoft.com/mssql/server:2019-latest"
+#    container_name: questionario_Db
+#    ports: # not actually needed, because the two services are on the same network
+#      - "1433:1433" 
+#    environment:
+#      - ACCEPT_EULA=y
+#      - SA_PASSWORD=K@v@Ntr0P8

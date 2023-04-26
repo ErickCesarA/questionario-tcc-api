@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddEntityFrameworkSqlServer().AddDbContext<RegistroDePacientesDbContext>
-    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
+   (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 builder.Services.AddScoped<IPacienteRepos, PacienteRepos>();
 
@@ -32,6 +32,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 app.UseCors("QuetionarioTccOrigins");
 
 app.UseHttpsRedirection();
