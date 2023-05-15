@@ -81,7 +81,9 @@ namespace questionario_tcc_api.Repositorios
             pacientePorId.FatorAtenuante = paciente.FatorAtenuante;
             pacientePorId.QualFatorAtenuante = paciente.QualFatorAtenuante;
             pacientePorId.SintomasAlem = paciente.SintomasAlem;
-            pacientePorId.QualSintomasAlem = paciente.QualSintomasAlem;
+            pacientePorId.NauseaVomito = paciente.NauseaVomito;
+            pacientePorId.SensiLuzSom = paciente.SensiLuzSom;
+            pacientePorId.PontBriManchEsc = paciente.PontBriManchEsc;
 
             _dbcontext.Paciente.Update(pacientePorId);
             await _dbcontext.SaveChangesAsync();

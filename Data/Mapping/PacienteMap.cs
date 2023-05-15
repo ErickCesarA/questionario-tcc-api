@@ -56,7 +56,9 @@ namespace questionario_tcc_api.Data.Mapping
             builder.Property(x => x.FatorAtenuante).IsRequired();
             builder.Property(x => x.QualFatorAtenuante);
             builder.Property(x => x.SintomasAlem).IsRequired();
-            builder.Property(x => x.QualSintomasAlem);
+            builder.Property(x => x.NauseaVomito);
+            builder.Property(x => x.SensiLuzSom);
+            builder.Property(x => x.PontBriManchEsc);
         }
     }
 }

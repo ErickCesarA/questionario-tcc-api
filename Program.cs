@@ -29,7 +29,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseSwagger();
 app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/Swagger.json", "questionario_tcc_api"); });
-app.UseDeveloperExceptionPage();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

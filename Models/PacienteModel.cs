@@ -53,6 +53,8 @@ namespace questionario_tcc_api.Models
         public bool FatorAtenuante { get; set; }
         public string QualFatorAtenuante { get; set; } = string.Empty;
         public bool SintomasAlem { get; set; }
-        public string QualSintomasAlem { get; set; } = string.Empty;
+        public bool NauseaVomito { get; set; }
+        public bool SensiLuzSom { get; set; }
+        public bool PontBriManchEsc { get; set; }
     }
 }

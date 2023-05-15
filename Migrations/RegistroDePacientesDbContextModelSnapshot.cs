@@ -141,6 +141,12 @@ namespace questionario_tcc_api.Migrations
                     b.Property<int>("MlCafeSemana")
                         .HasColumnType("int");
 
+                    b.Property<bool>("NauseaVomito")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("PontBriManchEsc")
+                        .HasColumnType("bit");
+
                     b.Property<int>("QtdMacosSemana")
                         .HasColumnType("int");
 
@@ -160,9 +166,8 @@ namespace questionario_tcc_api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("QualSintomasAlem")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("SensiLuzSom")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("SintomasAlem")
                         .HasColumnType("bit");

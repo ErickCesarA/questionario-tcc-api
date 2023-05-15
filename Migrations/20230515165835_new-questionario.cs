@@ -5,7 +5,7 @@
 namespace questionario_tcc_api.Migrations
 {
     /// <inheritdoc />
-    public partial class questionario_Db_docker : Migration
+    public partial class newquestionario : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -63,7 +63,9 @@ namespace questionario_tcc_api.Migrations
                     FatorAtenuante = table.Column<bool>(type: "bit", nullable: false),
                     QualFatorAtenuante = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SintomasAlem = table.Column<bool>(type: "bit", nullable: false),
-                    QualSintomasAlem = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    NauseaVomito = table.Column<bool>(type: "bit", nullable: false),
+                    SensiLuzSom = table.Column<bool>(type: "bit", nullable: false),
+                    PontBriManchEsc = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

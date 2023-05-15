@@ -11,8 +11,8 @@ using questionario_tcc_api.Data;
 namespace questionario_tcc_api.Migrations
 {
     [DbContext(typeof(RegistroDePacientesDbContext))]
-    [Migration("20230421151549_questionario_Db_docker")]
-    partial class questionario_Db_docker
+    [Migration("20230515165835_new-questionario")]
+    partial class newquestionario
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -144,6 +144,12 @@ namespace questionario_tcc_api.Migrations
                     b.Property<int>("MlCafeSemana")
                         .HasColumnType("int");
 
+                    b.Property<bool>("NauseaVomito")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("PontBriManchEsc")
+                        .HasColumnType("bit");
+
                     b.Property<int>("QtdMacosSemana")
                         .HasColumnType("int");
 
@@ -163,9 +169,8 @@ namespace questionario_tcc_api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("QualSintomasAlem")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("SensiLuzSom")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("SintomasAlem")
                         .HasColumnType("bit");
