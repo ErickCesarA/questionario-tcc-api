@@ -86,3 +86,4 @@ C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\questionario-t
 C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\questionario-tcc-api.genruntimeconfig.cache
 C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\ref\questionario-tcc-api.dll
 C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

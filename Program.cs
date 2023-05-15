@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
 using questionario_tcc_api.Data;
 using questionario_tcc_api.Repositorios;
 using questionario_tcc_api.Repositorios.Interfaces;
@@ -7,14 +6,18 @@ using questionario_tcc_api.Repositorios.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var DataBaseMySql = builder.Configuration.GetConnectionString("DataBase");
+builder.Services.AddDbContext<RegistroDePacientesDbContext>
+    (options => options.UseMySql(DataBaseMySql,
+    ServerVersion.Parse("MySQl 8.0.32")));
+
+//builder.Services.AddEntityFrameworkSqlServer().AddDbContext<RegistroDePacientesDbContext>
+//   (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddEntityFrameworkSqlServer().AddDbContext<RegistroDePacientesDbContext>
-   (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 builder.Services.AddScoped<IPacienteRepos, PacienteRepos>();
 
