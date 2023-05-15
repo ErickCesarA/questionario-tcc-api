@@ -85,3 +85,4 @@ C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\refint\questio
 C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\questionario-tcc-api.pdb
 C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\questionario-tcc-api.genruntimeconfig.cache
 C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\ref\questionario-tcc-api.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\MySqlConnector.dll
