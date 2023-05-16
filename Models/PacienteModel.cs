@@ -49,8 +49,8 @@ namespace questionario_tcc_api.Models
         public double LocalIrradiaDorY { get; set; }
         public string DiscriçãoDor { get; set; } = string.Empty;
         public int ItensidadeDor { get; set; }
-        public string TempoPicoDor { get; set; } = DateTime.Now.ToString("HH:mm");
-        public string TempoCrise { get; set; } = DateTime.Now.ToString("HH:mm");
+        public string TempoPicoDor { get; set; } = DateTime.Now.ToShortTimeString();
+        public string TempoCrise { get; set; } = DateTime.Now.ToShortTimeString();
         public bool FatorAgravante { get; set; }
         public string QualFatorAgravante { get; set; } = string.Empty;
         public bool FatorAtenuante { get; set; }
