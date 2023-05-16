@@ -21,7 +21,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IPacienteRepos, PacienteRepos>();
 
-builder.Services.AddCors(options => options.AddPolicy(name: "QuetionarioTccOrigins",
+builder.Services.AddCors(options => options.AddPolicy("QuetionarioTccOrigins",
     policy =>
     {
         policy.WithOrigins("https://localhost:4200/","https://ui-questionario-tcc.herokuapp.com/").AllowAnyMethod().AllowAnyHeader();
