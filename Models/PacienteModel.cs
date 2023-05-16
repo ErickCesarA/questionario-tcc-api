@@ -10,12 +10,12 @@ namespace questionario_tcc_api.Models
         public string Nome { get; set; } = string.Empty;
         public string Telefone { get; set; } = string.Empty;
         public int Idade { get; set; }
-        public Genero Genero { get; set; }
-        public StatusCivil StatusCivil { get; set; }
-        public Etinia Etnia { get; set; }
+        public string Genero { get; set; } = string.Empty;
+        public string StatusCivil { get; set; } = string.Empty;
+        public string Etnia { get; set; } = string.Empty;
         public bool DoencaCronica { get; set; }
         public string QualDoenca { get; set; } = string.Empty;
-        public HorasExercicios HoraExercicio { get; set; }
+        public string HoraExercicio { get; set; } = string.Empty;
         public bool MedicamentoContinuo { get; set; }
         public string QualMedicamento { get; set; } = string.Empty;
         public int MlCafeSemana { get; set; }
@@ -23,7 +23,7 @@ namespace questionario_tcc_api.Models
         public int QtdMacosSemana { get; set; }
         public bool Bebida { get; set; }
         public int BedidasSemana { get; set; }
-        public AnosCafeleia AnosCafeleia { get; set; }
+        public string AnosCafeleia { get; set; } = string.Empty;
         public int EpisodiosMes { get; set; }
         public bool BuscaProficional { get; set; }
         public bool Melhora { get; set; }
@@ -43,7 +43,7 @@ namespace questionario_tcc_api.Models
         public int DorRelacionamento { get; set; }
         public int DorSono { get; set; }
         public int DorVida { get; set; }
-        public LocalExataDor LocalExataDor { get; set; }
+        public string LocalExataDor { get; set; } = string.Empty;
         public bool DorIrradia { get; set; }
         public double LocalIrradiaDorX { get; set; }
         public double LocalIrradiaDorY { get; set; }
