@@ -4,6 +4,7 @@ using questionario_tcc_api.Repositorios;
 using questionario_tcc_api.Repositorios.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
+var QuetionarioTccOrigins = "_quetionarioTccOrigins";
 
 // Add services to the container.
 var DataBaseMySql = builder.Configuration.GetConnectionString("DataBase");
@@ -21,7 +22,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IPacienteRepos, PacienteRepos>();
 
-builder.Services.AddCors(options => options.AddPolicy("QuetionarioTccOrigins",
+builder.Services.AddCors(options => options.AddPolicy(name:QuetionarioTccOrigins,
     policy =>
     {
         policy.WithOrigins("https://ui-questionario-tcc.herokuapp.com/").AllowAnyMethod().AllowAnyHeader();
@@ -39,7 +40,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("QuetionarioTccOrigins");
+app.UseCors(QuetionarioTccOrigins);
 
 app.UseHttpsRedirection();
 
