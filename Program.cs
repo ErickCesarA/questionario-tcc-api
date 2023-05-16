@@ -28,6 +28,8 @@ builder.Services.AddCors(options => options.AddPolicy(name:QuetionarioTccOrigins
         policy.WithOrigins("https://ui-questionario-tcc.herokuapp.com/").AllowAnyMethod().AllowAnyHeader();
     }));
 
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
