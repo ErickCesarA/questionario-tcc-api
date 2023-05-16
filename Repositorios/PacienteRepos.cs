@@ -36,6 +36,8 @@ namespace questionario_tcc_api.Repositorios
                 throw new Exception("Paciente não encontrado");
             }
             pacientePorId.Idade = paciente.Idade;
+            pacientePorId.Nome = paciente.Nome;
+            pacientePorId.Telefone = paciente.Telefone;
             pacientePorId.StatusCivil = paciente.StatusCivil;
             pacientePorId.Etnia = paciente.Etnia;
             pacientePorId.DoencaCronica = paciente.DoencaCronica;

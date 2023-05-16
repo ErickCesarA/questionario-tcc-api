@@ -11,6 +11,8 @@ namespace questionario_tcc_api.Data.Mapping
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Idade).IsRequired();
+            builder.Property(x => x.Nome).IsRequired();
+            builder.Property(x => x.Telefone).IsRequired();
             builder.Property(x => x.StatusCivil).IsRequired();
             builder.Property(x => x.Etnia).IsRequired();
             builder.Property(x => x.DoencaCronica).IsRequired();

@@ -87,3 +87,9 @@ C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\questionario-t
 C:\Users\erick\source\repos\questionario-tcc-api\obj\Debug\net6.0\ref\questionario-tcc-api.dll
 C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\erick\source\repos\questionario-tcc-api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

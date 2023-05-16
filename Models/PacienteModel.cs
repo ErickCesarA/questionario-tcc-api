@@ -1,4 +1,5 @@
 ﻿using questionario_tcc_api.Enums;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace questionario_tcc_api.Models
@@ -6,6 +7,8 @@ namespace questionario_tcc_api.Models
     public class PacienteModel
     {
         public int Id { get; set; }
+        public string Nome { get; set; } = string.Empty;
+        public string Telefone { get; set; } = string.Empty;
         public int Idade { get; set; }
         public Genero Genero { get; set; }
         public StatusCivil StatusCivil { get; set; }
