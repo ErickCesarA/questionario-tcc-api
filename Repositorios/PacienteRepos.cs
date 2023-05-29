@@ -86,6 +86,22 @@ namespace questionario_tcc_api.Repositorios
             pacientePorId.NauseaVomito = paciente.NauseaVomito;
             pacientePorId.SensiLuzSom = paciente.SensiLuzSom;
             pacientePorId.PontBriManchEsc = paciente.PontBriManchEsc;
+            pacientePorId.Criterio1 = paciente.Criterio1;
+            pacientePorId.Criterio2 = paciente.Criterio2;
+            pacientePorId.Criterio3 = paciente.Criterio3;
+            pacientePorId.Criterio4 = paciente.Criterio4;
+            pacientePorId.Criterio5 = paciente.Criterio5;
+            pacientePorId.Criterio6 = paciente.Criterio6;
+            pacientePorId.Criterio7 = paciente.Criterio7;
+            pacientePorId.Criterio8 = paciente.Criterio8;
+            pacientePorId.Criterio9 = paciente.Criterio9;
+            pacientePorId.Criterio10 = paciente.Criterio10;
+            pacientePorId.Criterio11 = paciente.Criterio11;
+            pacientePorId.Criterio12 = paciente.Criterio12;
+            pacientePorId.Criterio13 = paciente.Criterio13;
+            pacientePorId.Criterio14 = paciente.Criterio14;
+            pacientePorId.Criterio15 = paciente.Criterio15;
+            pacientePorId.Criterio16 = paciente.Criterio16;
 
             _dbcontext.Paciente.Update(pacientePorId);
             await _dbcontext.SaveChangesAsync();

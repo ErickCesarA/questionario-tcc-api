@@ -61,6 +61,22 @@ namespace questionario_tcc_api.Data.Mapping
             builder.Property(x => x.NauseaVomito);
             builder.Property(x => x.SensiLuzSom);
             builder.Property(x => x.PontBriManchEsc);
+            builder.Property(x => x.Criterio1);
+            builder.Property(x => x.Criterio2);
+            builder.Property(x => x.Criterio3);
+            builder.Property(x => x.Criterio4);
+            builder.Property(x => x.Criterio5);
+            builder.Property(x => x.Criterio6);
+            builder.Property(x => x.Criterio7);
+            builder.Property(x => x.Criterio8);
+            builder.Property(x => x.Criterio9);
+            builder.Property(x => x.Criterio10);
+            builder.Property(x => x.Criterio11);
+            builder.Property(x => x.Criterio12);
+            builder.Property(x => x.Criterio13);
+            builder.Property(x => x.Criterio14);
+            builder.Property(x => x.Criterio15);
+            builder.Property(x => x.Criterio16);
         }
     }
 }
