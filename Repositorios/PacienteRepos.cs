@@ -38,6 +38,7 @@ namespace questionario_tcc_api.Repositorios
             pacientePorId.Idade = paciente.Idade;
             pacientePorId.Nome = paciente.Nome;
             pacientePorId.Telefone = paciente.Telefone;
+            pacientePorId.Genero = paciente.Genero;
             pacientePorId.StatusCivil = paciente.StatusCivil;
             pacientePorId.Etnia = paciente.Etnia;
             pacientePorId.DoencaCronica = paciente.DoencaCronica;
