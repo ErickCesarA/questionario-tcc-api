@@ -31,8 +31,12 @@ namespace questionario_tcc_api.Data.Mapping
             builder.Property(x => x.Melhora);
             builder.Property(x => x.LocalDorX);
             builder.Property(x => x.LocalDorY);
+            builder.Property(x => x.TelaLocalDorX);
+            builder.Property(x => x.TelaLocalDorY);
             builder.Property(x => x.LocalMaiorDorX);
             builder.Property(x => x.LocalMaiorDorY);
+            builder.Property(x => x.TelaLocalMaiorDorX);
+            builder.Property(x => x.TelaLocalMaiorDorY);
             builder.Property(x => x.MaiorDor24h);
             builder.Property(x => x.MenorDor24h);
             builder.Property(x => x.GeralDor24h);
@@ -49,6 +53,8 @@ namespace questionario_tcc_api.Data.Mapping
             builder.Property(x => x.DorIrradia);
             builder.Property(x => x.LocalIrradiaDorX);
             builder.Property(x => x.LocalIrradiaDorY);
+            builder.Property(x => x.TelaLocalIrradiaDorX);
+            builder.Property(x => x.TelaLocalIrradiaDorY);
             builder.Property(x => x.DiscriçãoDor);
             builder.Property(x => x.ItensidadeDor);
             builder.Property(x => x.TempoPicoDor);

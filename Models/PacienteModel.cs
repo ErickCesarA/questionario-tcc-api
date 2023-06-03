@@ -27,10 +27,14 @@ namespace questionario_tcc_api.Models
         public int EpisodiosMes { get; set; }
         public bool BuscaProficional { get; set; }
         public bool Melhora { get; set; }
-        public double LocalDorX { get; set; }
-        public double LocalDorY { get; set; }
-        public double LocalMaiorDorX { get; set; }
-        public double LocalMaiorDorY { get; set; }
+        public int LocalDorX { get; set; }
+        public int LocalDorY { get; set; }
+        public int TelaLocalDorX { get; set; }
+        public int TelaLocalDorY { get; set; }
+        public int LocalMaiorDorX { get; set; }
+        public int LocalMaiorDorY { get; set; }
+        public int TelaLocalMaiorDorX { get;set; }
+        public int TelaLocalMaiorDorY { get; set; }
         public int MaiorDor24h { get; set; }
         public int MenorDor24h { get; set; }
         public int GeralDor24h { get; set; }
@@ -45,8 +49,10 @@ namespace questionario_tcc_api.Models
         public int DorVida { get; set; }
         public string LocalExataDor { get; set; } = string.Empty;
         public bool DorIrradia { get; set; }
-        public double LocalIrradiaDorX { get; set; }
-        public double LocalIrradiaDorY { get; set; }
+        public int LocalIrradiaDorX { get; set; }
+        public int LocalIrradiaDorY { get; set; }
+        public int TelaLocalIrradiaDorX { get; set; }
+        public int TelaLocalIrradiaDorY { get; set; }
         public string DiscriçãoDor { get; set; } = string.Empty;
         public int ItensidadeDor { get; set; }
         public string TempoPicoDor { get; set; } = DateTime.Now.ToShortTimeString();
